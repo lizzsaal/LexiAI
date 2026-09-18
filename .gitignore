@@ -1,33 +1,29 @@
 # Dependencies
 node_modules/
 
-# Environment files and local secrets
+# Environment files
 .env
 .env.*
 !.env.example
 
-# Build and distribution output
+# Build output
 dist/
 build/
 out/
-*.zip
-*.crx
-*.xpi
 
-# Local exports
-exports/*.txt
-downloads/*.txt
+# Tool caches
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+coverage/
 
-# Logs and temporary files
+# Logs
 *.log
-tmp/
-temp/
 
-# OS files
+# OS / editor
 .DS_Store
 Thumbs.db
-
-# Editors
 .vscode/
 .idea/
 *.swp
