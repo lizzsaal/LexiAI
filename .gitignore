@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Chrome extension build artifacts (if you ever add a build step)
+dist/
+build/
+*.crx
+*.pem
+
+# Logs
+*.log
