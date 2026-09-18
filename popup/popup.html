@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="header-title">LexiAI - Grammar Checker</div>
+  <div class="header-sub">Local · Private · Free</div>
+  <div class="status-row">
+    <div class="status-pill">
+      <div class="status-dot" id="lt-dot"></div>
+      <span>LanguageTool</span>
+    </div>
+    <div class="status-pill">
+      <div class="status-dot" id="ol-dot"></div>
+      <span>Ollama</span>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" data-tab="settings">⚙ Settings</button>
+  <button class="tab" data-tab="chat">✦ AI Chat</button>
+  <button class="tab" data-tab="math">π Math</button>
+</div>
+
+<div class="panel active" id="panel-settings">
+
+  <div class="section-label">Language</div>
+  <div class="select-row">
+    <span class="toggle-label">Checking language</span>
+    <select id="sel-language">
+      <option value="en-CA">English (CA)</option>
+      <option value="en-US">English (US)</option>
+      <option value="en-GB">English (UK)</option>
+      <option value="en-AU">English (AU)</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+      <option value="es">Spanish</option>
+    </select>
+  </div>
+
+  <div class="section-label">AI Default Tone</div>
+  <div class="select-row">
+    <span class="toggle-label">Preferred tone</span>
+    <select id="sel-tone">
+      <option value="Original">Original</option>
+      <option value="Formal">Formal</option>
+      <option value="Casual">Casual</option>
+      <option value="Concise">Concise</option>
+    </select>
+  </div>
+
+  <div class="section-label">Ignore List</div>
+  <div class="ignore-input-row">
+    <input type="text" id="ignore-input" placeholder="Add a word to ignore...">
+    <button class="ignore-add-btn" id="ignore-add">Add</button>
+  </div>
+  <div class="ignore-tags" id="ignore-tags"></div>
+
+  <div class="section-label">Site</div>
+  <a href="../index/lexiai.html" target="_blank" rel="noopener">LexiAI</a>
+
+</div>
+
+<div class="panel" id="panel-chat">
+  <button class="chat-clear-btn" id="chat-clear">Clear chat</button>
+  <div class="chat-messages" id="chat-messages">
+  </div>
+  <div class="chat-input-row">
+    <textarea class="chat-input" id="chat-input" placeholder="Ask anything or paste text..." rows="1"></textarea>
+    <button class="chat-send-btn" id="chat-send">↑</button>
+  </div>
+</div>
+
+<div class="panel" id="panel-math">
+  <div class="math-panel">
+    <div class="math-group">
+      <span class="math-label">Input (LaTeX or Plain Text):</span>
+      <textarea id="math-input" class="math-textarea" placeholder="Paste LaTeX (e.g. \int x^2 dx) or normal math description..."></textarea>
+    </div>
+
+    <div class="math-actions">
+      <button id="btn-to-text" class="math-btn">LaTeX ➔ Text</button>
+      <button id="btn-to-latex" class="math-btn">Text ➔ LaTeX</button>
+    </div>
+
+    <div class="math-group">
+      <span class="math-label">Converted Output:</span>
+      <textarea id="math-output" class="math-textarea output" placeholder="Result will show here..." readonly></textarea>
+    </div>
+
+    <button id="math-copy-btn" class="math-btn">Copy Result</button>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
