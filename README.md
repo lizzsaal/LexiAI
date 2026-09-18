@@ -13,7 +13,7 @@ Powered by [LanguageTool](https://languagetool.org/) for grammar checking and [O
 - **AI rewriting** via Ollama — select any text and press `Alt+G` (or right-click → *Improve with AI*)
 - **Tone controls** — Original, Formal, Casual, or Concise
 - **AI Chat panel** — a persistent local chat assistant in the popup
-- **LaTeX ↔ Plain Text converter** for math notation
+- **LaTeX ↔ Plain Text converter** for math notation 
 - **Ignore list** — add words to skip during grammar checks
 - **Multi-language support** — English (CA/US/UK/AU), French, German, Spanish
 - Fully **offline and private** — no API keys, no cloud calls
