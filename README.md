@@ -92,7 +92,7 @@ Grammar and spelling errors are automatically underlined on any text field as yo
 Open the extension popup and click the **✦ AI Chat** tab to chat with Llama 3 directly — ask questions, request rewrites, or generate new content.
 
 ### Web UI
-Open lexiai.html directly in your browser (no extension needed). It provides grammar checking, AI rewriting with tone selection, and the ability to export your corrected text as a file. Requires LanguageTool and Ollama to be running locally.
+Open `lexiai.html` directly in your browser (no extension needed). It provides grammar checking, AI rewriting with tone selection, and the ability to export your corrected text as a file. Requires LanguageTool and Ollama to be running locally.
 
 ### Math Converter
 Open the **π Math** tab to convert between LaTeX and plain-text math notation in either direction.
