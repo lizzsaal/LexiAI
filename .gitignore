@@ -15,8 +15,8 @@ out/
 *.xpi
 
 # Local exports
-*.docx
-*.txt
+exports/*.txt
+downloads/*.txt
 
 # Logs and temporary files
 *.log
