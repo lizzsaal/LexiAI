@@ -1,0 +1,212 @@
+/* Floating overlay for text areas */
+.lt-overlay {
+  position: absolute !important;
+  pointer-events: none !important;
+  color: transparent !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  overflow: hidden !important;
+  z-index: 999999 !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+}
+
+/* Clickable error underlines */
+mark.lt-highlight {
+  background: transparent !important;
+  border-bottom: 2px dashed #378add;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  color: transparent !important;
+}
+
+mark.lt-highlight.lt-misspelling {
+  border-bottom-color: #e24b4a !important;
+}
+
+/* ── Draggable Popup Base Styles ───────────────────────────── */
+.lt-popup {
+  position: fixed !important; /* Fixed to viewport for smooth positioning & dragging */
+  background: #ffffff;
+  border: 1px solid #dcdfe6;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+  z-index: 9999999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  color: #222222;
+  pointer-events: all;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Draggable Header Handle */
+.lt-popup-drag-handle {
+  cursor: move; /* Move cursor indicates draggable header */
+  user-select: none;
+  background: #f4f5f7;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e4e7ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 12px;
+  color: #475569;
+}
+
+.lt-popup-drag-handle::after {
+  content: "⣿"; /* Drag grip icon */
+  font-size: 14px;
+  color: #94a3b8;
+  margin-left: 8px;
+}
+
+/* ── Grammar Tool (LanguageTool) Popup ────────────────────────── */
+.lt-grammar-popup {
+  width: 320px;
+}
+
+.lt-grammar-content {
+  padding: 12px;
+}
+
+.lt-grammar-msg {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #334155;
+}
+
+.lt-grammar-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.lt-grammar-btn {
+  background: #378add;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.lt-grammar-btn:hover {
+  background: #1d6db5;
+}
+
+.lt-grammar-empty {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* ── AI Assistant (Ollama) Popup ──────────────────────────────── */
+.lt-ai-popup {
+  width: 360px;
+}
+
+.lt-ai-header {
+  color: #534AB7;
+}
+
+.lt-ai-body {
+  padding: 12px;
+}
+
+.lt-ai-tones {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.lt-ai-tone-btn {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #475569;
+  transition: all 0.2s;
+}
+
+.lt-ai-tone-btn.active {
+  border-color: #534AB7;
+  background: #EEEDFE;
+  color: #534AB7;
+  font-weight: 600;
+}
+
+.lt-ai-result {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 60px;
+  line-height: 1.5;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.lt-ai-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.lt-ai-btn-dismiss {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #475569;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.lt-ai-btn-apply {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #534AB7;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.lt-ai-btn-apply.ready {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Rule category badge on grammar popup */
+.lt-grammar-badge {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: #EEF2FF;
+  color: #534AB7;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Alt+G hint in AI popup header */
+.lt-ai-hint {
+  font-size: 11px;
+  font-weight: 400;
+  color: #94a3b8;
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: auto;
+}
