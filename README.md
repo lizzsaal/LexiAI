@@ -18,7 +18,7 @@ Powered by [LanguageTool](https://languagetool.org/) for grammar checking and [O
 - **Multi-language support** — English (CA/US/UK/AU), French, German, Spanish
 - Fully **offline and private** — no API keys, no cloud calls
 
-### Web UI (`lexiai.html`)
+### Web UI (`index.html`)
 A standalone webpage you can open directly in your browser (no extension required):
 - **Grammar checking** powered by LanguageTool
 - **AI rewriting** with tone selection via Ollama
@@ -92,7 +92,7 @@ Grammar and spelling errors are automatically underlined on any text field as yo
 Open the extension popup and click the **✦ AI Chat** tab to chat with Llama 3 directly — ask questions, request rewrites, or generate new content.
 
 ### Web UI
-Open `lexiai.html` directly in your browser (no extension needed). It provides grammar checking, AI rewriting with tone selection, and the ability to export your corrected text as a file. Requires LanguageTool and Ollama to be running locally.
+Open `index.html` directly in your browser (no extension needed). It provides grammar checking, AI rewriting with tone selection, and the ability to export your corrected text as a file. Requires LanguageTool and Ollama to be running locally.
 
 ### Math Converter
 Open the **π Math** tab to convert between LaTeX and plain-text math notation in either direction.
@@ -119,9 +119,9 @@ lexiai/
 │   ├── popup.js             # Popup logic (settings, chat, math converter)
 │   └── popup.css            # Popup styling overlays
 ├── index/                   
-│   ├── lexiai.html          # Standalone web UI 
-│   ├── lexiai.js            # Web logic (grammar check, AI rewrite, file export)
-│   └── lexiai.css           # Webpage styling overlays
+│   ├── index.html          # Standalone web UI 
+│   ├── index.js            # Web logic (grammar check, AI rewrite, file export)
+│   └── index.css           # Webpage styling overlays
 ├── scripts/                 
 │   ├── background.js        # Background service worker
 │   └── content.js           # Grammar highlighting & AI popup logic
