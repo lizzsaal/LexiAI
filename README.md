@@ -26,6 +26,26 @@ A standalone webpage you can open directly in your browser (no extension require
 
 ---
 
+## Screenshots
+
+<img width="1910" height="1041" alt="Screenshot 2026-10-03 204019" src="https://github.com/user-attachments/assets/d5b4e7d3-2d32-4060-96c4-acc7ca616e45" />
+
+<table>
+  <tr>
+    <td width="33%">
+      <img width="482" height="590" alt="Screenshot 2026-10-03 204152" src="https://github.com/user-attachments/assets/2f3ceac5-73ef-4bc1-8328-eef33da63348" />
+    </td>
+    <td width="33%">
+      <img width="482" height="590" alt="Screenshot 2026-10-03 204200" src="https://github.com/user-attachments/assets/fdb18134-9b79-476a-8ded-eececa12f018" />
+    </td>
+   <td width="33%">
+      <img width="482" height="590" alt="Screenshot 2026-10-03 204827" src="https://github.com/user-attachments/assets/ea75e1f5-10c9-4ac9-9d2e-c00bb0e68461" />
+    </td>
+  </tr>
+</table>
+
+---
+
 ## Requirements
 
 You need two local services running before the extension will work:
