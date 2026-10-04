@@ -1,7 +1,7 @@
 Privacy Policy for LexiAI - Grammar Checker
 Last updated: October 3, 2026
 
-LexiAI does not collect, store, sell, or transmit your personal data to the developer or any third party.
+LexiAI processes your text locally on your own computer and does not send it to the developer or any third party.
 
 What the extension handles
 - Text you type or select in web page text fields, so it can be checked for grammar and rewritten.
